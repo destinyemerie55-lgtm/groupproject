@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: lemonchiffon;
+    flex-wrap: wrap;
+}
+
+.menubar {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.menu {
+    background: blue;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: white;
+}
+
+.menu:hover{
+    background: black;
+    color: white;
+    box-shadow: rgba(61, 61, 61, 0.206) 0.1rem 0rem 0rem 0.1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* --- ABOUT SECTION SHARED STYLES --- */
+.about {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.acont, .acont2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 40px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+
+.ctxt {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.abt h1 {
+    font-size: 3rem;
+    color: blue;
+}
+
+.abt2 h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.context span {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+.brk {
+    background: blue;
+    width: 100px; 
+    height: 4px;
+    border-radius: 10px;
+}
+
+
+.num {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.ntxt h1 {
+    font-size: 2rem;
+    color: blue;
+}
+
+/* Image Containers */
+.pic {
+    flex: 1;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px blue; 
+}
+
+
+.rtxt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.rtxt img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    #navbar {
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    
+    .acont, .acont2 {
+        flex-direction: column; 
+        padding: 20px;
+        text-align: center;
+    }
+
+    
+    .acont2 {
+        flex-direction: column-reverse; 
+    }
+
+    .abt h1 {
+        font-size: 2.2rem;
+    }
+
+    .abt2 h3 {
+        font-size: 1.4rem;
+    }
+
+   
+    .num {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .brk {
+        margin: 0 auto; 
+    }
+
+    .rtxt {
+        justify-content: center;
+    }
+}
